@@ -5,6 +5,10 @@
 
 package com.mycompany.ventanasperobien;
 
+import controlador.Controlador;
+import modelo.Modelo;
+import vistas.Vista;
+
 /**
  *
  * @author Antonio <2860075@alu.murciaeduca.es>
@@ -12,6 +16,9 @@ package com.mycompany.ventanasperobien;
 public class VentanasPeroBien {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Modelo modelo = new Modelo();
+        Vista vista = new Vista();
+        Controlador c = new Controlador(modelo,vista);
+        
     }
 }
